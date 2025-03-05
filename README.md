@@ -37,7 +37,7 @@ Create Table Retail_Sales
                 cogs	Float,
                 total_sale float
 				)
-
+```
 ### 2. Data Exploration & Cleaning
 
 - **Record Count**: Determine the total number of records in the dataset.
