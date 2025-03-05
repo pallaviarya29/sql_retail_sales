@@ -157,9 +157,6 @@ Select
 
 10. **Write a SQL query to create each shift and number of orders (Example Morning <12, Afternoon Between 12 & 17, Evening >17)**:
 ```sql
-WITH hourly_sale
-AS
-(
 Select
   Case 
       When Cast(sale_time as Time) <'12:00:00' then 'Morning'
@@ -175,6 +172,7 @@ Select
       Else 'Evening'
 	  End
 	  Order by total_orders Desc
+
 ```
 
 ## Findings
